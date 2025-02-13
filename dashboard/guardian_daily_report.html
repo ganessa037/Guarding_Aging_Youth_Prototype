@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="keyword" content="">
+      <meta name="author" content=""/>
+      <!-- Page Title -->
+      <title>DataTable | Adminify - Multipurpose Admin Dashboard Template</title>
+      <!-- Main CSS -->			
+      <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+      <link href="assets/plugins/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+      <link href="assets/plugins/ionicons/css/ionicons.css" rel="stylesheet">
+      <link href="assets/plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
+      <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet">
+      <link href="assets/plugins/datatables/extensions/dataTables.jqueryui.min.css" rel="stylesheet">
+      <link href="assets/css/skin-turquoise.css" rel="stylesheet" id="style-colors">
+      <link href="assets/css/app.min.css" rel="stylesheet"/>
+      <link href="assets/css/style.css" rel="stylesheet"/>
+      <!-- Favicon -->	
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <!--================================-->
+      <!-- Page Container Start -->
+      <!--================================-->
+      <div class="page-container">
+         <!--================================-->
+         <!-- Page Sidebar Start -->
+         <!--================================-->
+         <div class="page-sidebar">
+            <a class="logo-box" href="dash_guard.html">
+            <span><img src="assets/images/white_logo.png" alt=""></span>
+            <i class="ion-aperture" id="fixed-sidebar-toggle-button"></i>
+            <i class="ion-ios-close-empty" id="sidebar-toggle-button-close"></i>
+            </a>
+            <div class="page-sidebar-inner">
+               <div class="page-sidebar-menu">
+                  <ul class="accordion-menu">
+                     <li>
+                        <a href="guardian_dashboard.html"><i class="fa fa-tachometer"></i>
+                        <span>Dashboard</span></a>
+                     </li>
+                     <li>
+                        <a href="guardian_elderly_page.html"><i class="fa fa-user"></i>
+                        <span>Elderly Details</span></a>
+                     </li>
+                     <li>
+                        <a href="guardian_daily_report.html"><i class="fa fa-clipboard"></i>
+                        <span>Daily Reports</span></a>
+                     </li>      
+                     <li>
+                        <a href="guardian_chat_room.html"><i class="fa fa-comments"></i>
+                        <span>Real Time Chat</span></a>
+                     </li>               
+                     <li>
+                        <a href="guardian_profile_page.html"><i class="icon-user"></i>
+                        <span>My Profile</span></a>
+                     </li>
+                     <li>
+                        <a href="guardian_emergency_contacts.html"><i class="fa fa-phone"></i>
+                        <span>Emergency Contact</span><span class="badge-danger ft-right">SOS</span></a>
+                     </li>
+                     <li>
+                        <a href="guardian_faq.html"><i class="fa fa-question-circle"></i>
+                        <span>Help</span><span class="badge-info ft-right">FAQ</span></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!--/ Page Sidebar End -->
+         <!--================================-->
+         <!-- Page Content Start -->
+         <!--================================-->
+         <div class="page-content">
+            <!--================================-->
+            <!-- Page Header Start -->
+            <!--================================-->
+            <div class="page-header">
+               <div class="search-form">
+                  <form action="#" method="GET">
+                     <div class="input-group">
+                        <input class="form-control search-input" name="search" placeholder="Type something..." type="text"/>
+                        <span class="input-group-btn">
+                        <span id="close-search"><i class="ion-ios-close-empty"></i></span>
+                        </span>
+                     </div>
+                  </form>
+               </div>
+               <nav class="navbar navbar-default">
+                  <!--================================-->
+                  <!-- Brand and Logo Start  -->
+                  <!--================================-->
+                  <div class="navbar-header">
+                     <div class="navbar-brand">
+                        <ul class="list-inline">
+                           <!-- Mobile Toggle and Logo -->
+                           <li class="list-inline-item"><a class="hidden-md hidden-lg" href="javascript:void(0)" id="sidebar-toggle-button"><i class="ion-navicon tx-20"></i></a></li>
+                           <!-- PC Toggle and Logo -->
+                           <li class="list-inline-item"><a class="text-muted hidden-xs hidden-sm" href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="ion-navicon tx-20"></i></a></li>
+                           <li class="list-inline-item mg-l-10"><a class="text-muted" href="javascript:void(0)" id="search-button"><i class="ion-ios-search-strong tx-20"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!--/ Brand and Logo End  -->
+                  <!--================================-->
+                  <!-- Header Right Start -->
+                  <!--================================-->
+                  <div class="header-right pull-right">
+                     <ul class="list-inline justify-content-end">
+                        <!--================================-->
+                        <!-- Profile Dropdown Start -->
+                        <!--================================-->
+                        <li class="list-inline-item dropdown">
+                           <a class="text-muted" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="select-profile">Hi, Ganessa!</span>
+                           <img src="assets/images/avatar/avatar.png" class="mg-b-10 img-fluid wd-30" alt="">                           
+                           </a>
+                           <ul class="dropdown-menu profile-dropdown shadow-2">
+                              <li>
+                                 <a href="page-profile.html"><i class="icon-user"></i><span>My Profile</span></a>
+                              </li>                              
+                              <li>
+                                 <a href="page-singin.html"><i class="icon-logout"></i><span>Log Out</span></a>
+                              </li>
+                           </ul>
+                        </li>
+                        <!-- Profile Dropdown End -->
+                     </ul>
+                  </div>
+                  <!--/ Header Right End -->
+               </nav>
+            </div>
+            <!-- / Page Header End -->
+            <!--================================-->
+            <!-- Page Inner Start -->
+            <!--================================-->
+            <div class="page-inner">
+               <!--================================-->
+               <!-- Main Wrapper Start -->
+               <!--================================-->
+               <div id="main-wrapper">
+                  <!--================================-->
+                  <!-- Breadcrumb Start -->
+                  <!--================================-->
+                  <div class="pageheader pd-y-15">
+                     <div class="pd-t-5 pd-b-5">
+                         <h1 class="pd-0 mg-0 tx-25 text-overflow">Your Role: <span style="color: red; font-weight: bold; font-style: italic;">Guardian</span></h1>
+                     </div>
+                     <div class="breadcrumb pd-0 mg-0">
+                         <!-- <a class="breadcrumb-item" href="index.html"><i class="icon ion-ios-home-outline"></i> Home</a> -->
+                         <span class="breadcrumb-item active">Daily Reports</span>
+                     </div>
+                   </div>
+                  <!--/ Breadcrumb End -->
+                  <div class="row clearfix">
+                     <div class="col-md-12 col-lg-12">
+                        <div class="card mb-4 shadow-1">
+                           <div class="card-header">
+                              <h4 class="card-header-title">
+                                 Daily Reports
+                              </h4>
+                           </div>
+                           <div class="card-body collapse show" id="collapse5">
+                              <table id="hoverTable" class="table hover responsive nowrap">
+                                 <thead>
+                                    <tr>
+                                       <th>Report ID</th>
+                                       <th>Report Title</th>
+                                       <th>Report Type</th>
+                                       <th>View Report</th>
+                                       <th>Start date</th>
+                                       <th>Status</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>R0001</td>
+                                       <td>Wellness Progress</td>
+                                       <td>Monthly Report</td>
+                                       <td><button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#viewReportModal" data-id="R0001" data-title="Wellness Progress" data-type="Monthly Report" data-content="Summary of wellness progress for the month.">View</button></td>
+                                       <td>20/04/25</td>
+                                       <td>Complete</td>
+                                    </tr>
+                                    <tr>
+                                       <td>R0002</td>
+                                       <td>Health Snapshot</td>
+                                       <td>Daily Report</td>
+                                       <td><button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#viewReportModal" data-id="R0002" data-title="Health Snapshot" data-type="Daily Report" data-content="Daily health snapshot of the elderly.">View</button></td>
+                                       <td>20/04/25</td>
+                                       <td>Complete</td>
+                                    </tr>
+                                    <tr>
+                                       <td>R0003</td>
+                                       <td>Monitoring Update</td>
+                                       <td>Incident Report</td>
+                                       <td><button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#viewReportModal" data-id="R0003" data-title="Monitoring Update" data-type="Incident Report" data-content="Update on any incidents or issues encountered.">View</button></td>
+                                       <td>20/04/25</td>
+                                       <td>Complete</td>
+                                    </tr>
+                                    <tr>
+                                       <td>R0004</td>
+                                       <td>Care Summary</td>
+                                       <td>Weekly Report</td>
+                                       <td><button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#viewReportModal" data-id="R0004" data-title="Care Summary" data-type="Weekly Report" data-content="Weekly summary of care activities.">View</button></td>
+                                       <td>20/04/25</td>
+                                       <td>Complete</td>
+                                    </tr>
+                                 </tbody>
+                                 <tfoot>
+                                    <tr>
+                                       <th>Report ID</th>
+                                       <th>Report Title</th>
+                                       <th>Report Type</th>
+                                       <th>View Report</th>
+                                       <th>Start date</th>
+                                       <th>Status</th>
+                                    </tr>
+                                 </tfoot>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                     <!--================================-->
+                     <!-- Hoverable dataTable Start -->
+                     <!--================================-->
+                     <div>
+                     </div>
+                     <!--/ Hoverable dataTable End -->	
+                     <div class="col-12">
+                        <!--================================-->
+                        <!-- Dummy Text Start -->
+                        <!--================================-->
+                        <div class="row mb-4 pd-25 no-gutters bg-white clearfix">
+                           <div class="col-md-12">
+                               <span class="mb-4 tx-20">Report Types</span>
+                               <p class="mg-b-0">Overview of various reports related to guardianship activities.</p>
+                           </div>
+                           <div class="col-md-3">
+                               <div class="card text-white bg-primary mb-4 shadow-1" style="max-width: 18rem;">
+                                   <div class="card-header tx-dark">Daily Report</div>
+                                   <div class="card-body">
+                                       <h5 class="card-title">Daily Activities</h5>
+                                       <p class="card-text">Summary of daily activities and tasks completed by the guardian.</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3">
+                               <div class="card text-white bg-secondary mb-4 shadow-1" style="max-width: 18rem;">
+                                   <div class="card-header tx-dark">Weekly Report</div>
+                                   <div class="card-body">
+                                       <h5 class="card-title">Weekly Summary</h5>
+                                       <p class="card-text">Overview of the weekly progress and key highlights of the guardian's duties.</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3">
+                               <div class="card text-white bg-success mb-4 shadow-1" style="max-width: 18rem;">
+                                   <div class="card-header tx-dark">Monthly Report</div>
+                                   <div class="card-body">
+                                       <h5 class="card-title">Monthly Overview</h5>
+                                       <p class="card-text">Detailed report of the guardian's activities and achievements over the month.</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3">
+                               <div class="card text-white bg-danger mb-4 shadow-1" style="max-width: 18rem;">
+                                   <div class="card-header tx-dark">Incident Report</div>
+                                   <div class="card-body">
+                                       <h5 class="card-title">Incident Details</h5>
+                                       <p class="card-text">Report of any incidents or issues encountered by the guardian.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+               <!--/ Main Wrapper End -->
+            </div>
+            <!--/ Page Inner End -->
+            <!--================================-->
+            <!-- Page Footer Start -->
+            <!--================================-->
+            <footer class="page-footer bg-gray-100">
+               <div class="pd-y-10 pd-x-25">
+                  <span class="tx-italic text-muted">Copyright&copy; 2019</span>
+               </div>
+            </footer>
+            <!--/ Page Footer End -->	
+         </div>
+         <!--/ Page Content End  -->
+      </div>
+      <!--/ Page Container End -->
+      <!--================================-->
+      <!-- Modal HTML for Viewing Report -->
+      <div class="modal fade" id="viewReportModal" tabindex="-1" role="dialog" aria-labelledby="viewReportModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="viewReportModalLabel">View Report</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <h5 id="reportTitle"></h5>
+                  <p id="reportType"></p>
+                  <p id="reportContent"></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer Script -->
+      <script src="assets/plugins/jquery/jquery.min.js"></script>
+      <script src="assets/plugins/jquery-ui/jquery-ui.js"></script>
+      <script src="assets/plugins/popper/popper.js"></script>
+      <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/plugins/pace/pace.min.js"></script>
+      <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+      <script src="assets/plugins/datatables/responsive/dataTables.responsive.js"></script>
+      <script src="assets/plugins/datatables/extensions/dataTables.jqueryui.min.js"></script>
+      <script src="assets/js/jquery.slimscroll.min.js"></script>
+      <script src="assets/js/highlight.min.js"></script>
+      <script src="assets/js/adminify.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script>
+         // Basic DataTable	
+         // Hoverable DataTable	
+         $('#hoverTable').DataTable({
+            responsive: true,
+            language: {
+               searchPlaceholder: 'Search...',
+               sSearch: ''
+            }
+         });
+         // Hoverable DataTable	
+         $('#orderActiveTable').DataTable({
+            responsive: true,
+            language: {
+               searchPlaceholder: 'Search...',
+               sSearch: ''
+            },
+            "order": [[ 1, "desc" ]]
+         });
+         $('#viewReportModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            var title = button.data('title'); // Extract info from data-* attributes
+            var type = button.data('type');
+            var content = button.data('content');
+            // Update the modal's content.
+            var modal = $(this);
+            modal.find('#reportTitle').text(title);
+            modal.find('#reportType').text(type);
+            modal.find('#reportContent').text(content);
+         });
+      </script>
+   </body>
+</html>

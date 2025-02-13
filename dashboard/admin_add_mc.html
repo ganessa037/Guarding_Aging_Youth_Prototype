@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="keyword" content="">
+      <meta name="author"  content=""/>
+      <!-- Page Title -->
+      <title>Add MC</title>
+      <!-- Main CSS -->			
+      <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+      <link href="assets/plugins/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+      <link href="assets/plugins/ionicons/css/ionicons.css" rel="stylesheet">
+      <link href="assets/css/skin-turquoise.css" rel="stylesheet" id="style-colors">
+      <link href="assets/css/app.min.css" rel="stylesheet"/>
+      <link href="assets/css/style.css" rel="stylesheet"/>
+      <link href="assets/plugins/datepicker/css/datepicker.min.css" rel="stylesheet">
+      <link href="assets/plugins/sweetalert/bootstrap-sweetalert.css" rel="stylesheet">
+      <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet">
+      <link href="assets/plugins/datatables/extensions/dataTables.jqueryui.min.css" rel="stylesheet">
+      <!-- Favicon -->	
+      <link rel="icon" href="assets/images/icon2.png" type="image/x-icon">
+   </head>
+   <body>
+      <!--================================-->
+      <!-- Page Container Start -->
+      <!--================================-->
+      <div class="page-container">
+         <!--================================-->
+         <!-- Page Sidebar Start -->
+         <!--================================-->
+         <div class="page-sidebar">
+            <a class="logo-box" href="dash_guard.html">
+            <span><img src="assets/images/white_logo.png" alt=""></span>
+            <i class="ion-aperture" id="fixed-sidebar-toggle-button"></i>
+            <i class="ion-ios-close-empty" id="sidebar-toggle-button-close"></i>
+            </a>
+            <div class="page-sidebar-inner">
+               <div class="page-sidebar-menu">
+                  <ul class="accordion-menu">
+                     <li>
+                         <a href="admin_dashboard.html"><i class="fa fa-tachometer"></i>
+                         <span>Dashboard</span></a>
+                     </li>
+                     <li>
+                         <a href="admin_manage_companion.html"><i class="fa fa-comments"></i>
+                         <span>Manage Companions</span></a>
+                     </li>               
+                     <li>
+                        <a href="admin_add_mc.html"><i class="fa fa-question-circle"></i>
+                        <span>Add Medical Consultants</span></a>
+                    </li>
+                     <li>
+                         <a href="admin_profile_page.html"><i class="icon-user"></i>
+                         <span>My Profile</span></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!--/ Page Sidebar End -->
+         
+         <!--================================-->
+         <!-- Page Content Start -->
+         <!--================================-->
+         <div class="page-content">
+            <!--================================-->
+            <!-- Page Header Start -->
+            <!--================================-->
+            <div class="page-header">
+               <div class="search-form">
+                  <form action="#" method="GET">
+                     <div class="input-group">
+                        <input class="form-control search-input" name="search" placeholder="Type something..." type="text"/>
+                        <span class="input-group-btn">
+                        <span id="close-search"><i class="ion-ios-close-empty"></i></span>
+                        </span>
+                     </div>
+                  </form>
+               </div>
+               <nav class="navbar navbar-default">
+                  <!--================================-->
+                  <!-- Brand and Logo Start -->
+                  <!--================================-->
+                  <div class="navbar-header">
+                     <div class="navbar-brand">
+                        <ul class="list-inline">
+                           <!-- Mobile Toggle and Logo -->
+                           <li class="list-inline-item"><a class="hidden-md hidden-lg" href="javascript:void(0)" id="sidebar-toggle-button"><i class="ion-navicon tx-20"></i></a></li>
+                           <!-- PC Toggle and Logo -->
+                           <li class="list-inline-item"><a class="text-muted hidden-xs hidden-sm" href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="ion-navicon tx-20"></i></a></li>
+                           <li class="list-inline-item mg-l-10"><a class="text-muted" href="javascript:void(0)" id="search-button"><i class="ion-ios-search-strong tx-20"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!--/ Brand and Logo End -->
+                  <!--================================-->
+                  <!-- Header Right Start -->
+                  <!--================================-->
+                  <div class="header-right pull-right">
+                     <ul class="list-inline justify-content-end">
+                        <!-- Profile Dropdown Start -->
+                        <!--================================-->
+                        <li class="list-inline-item dropdown">
+                           <a class="text-muted" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="select-profile">Hi, Ganessa!</span>
+                           <img src="assets/images/avatar/avatar.png" class="mg-b-10 img-fluid wd-30" alt="">                           
+                           </a>
+                           <ul class="dropdown-menu profile-dropdown shadow-2">
+                              <li>
+                                 <a href="page-profile.html"><i class="icon-user"></i><span>My Profile</span></a>
+                              </li>                              
+                              <li>
+                                 <a href="page-singin.html"><i class="icon-logout"></i><span>Log Out</span></a>
+                              </li>
+                           </ul>
+                        </li>
+                        <!-- Profile Dropdown End -->
+                     </ul>
+                  </div>
+                  <!--/ Header Right End -->
+               </nav>
+            </div>
+            <!--/ Page Header End -->
+            <!--================================-->
+
+            <!-- Page Inner Start -->
+            <!--================================-->
+            <div class="page-inner ht-100v">
+               <!--================================-->
+               <!-- Main Wrapper Start -->
+               <!--================================-->
+               <div id="main-wrapper">
+                  <!--================================-->
+                  <!-- Breadcrumb Start -->
+                  <!--================================-->
+                  <div class="pageheader pd-y-15">
+                     <div class="pd-t-5 pd-b-5">
+                         <h1 class="pd-0 mg-0 tx-25 text-overflow">Your Role: <span style="color: red; font-weight: bold; font-style: italic;">Admin</span></h1>
+                     </div>
+                     <div class="breadcrumb pd-0 mg-0">
+                         <!-- <a class="breadcrumb-item" href="index.html"><i class="icon ion-ios-home-outline"></i> Home</a> -->
+                         <span class="breadcrumb-item active">Admin Medical Consultant</span>
+                     </div>
+                   </div>
+                  <!--/ Breadcrumb End -->                  
+               </div>
+
+              <!-- Start -->
+                  <!--================================-->
+
+                  <!-- Modal HTML for Adding Consultant -->
+                  <div class="modal fade" id="addConsultantModal" tabindex="-1" role="dialog" aria-labelledby="addConsultantModalLabel" aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="addConsultantModalLabel">Add Medical Consultant Account</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <!-- Form content for adding a medical consultant -->
+                                 <form>
+                                    <div class="form-group">
+                                          <label for="consultantName">Name</label>
+                                          <input type="text" class="form-control" id="consultantName" placeholder="Enter name">
+                                    </div>
+                                    <div class="form-group">
+                                          <label for="consultantUsername">Username</label>
+                                          <input type="text" class="form-control" id="consultantUsername" placeholder="Enter username">
+                                    </div>
+                                    <div class="form-group">
+                                          <label for="consultantPassword">Password</label>
+                                          <input type="password" class="form-control" id="consultantPassword" placeholder="Enter password">
+                                    </div>
+                                 </form>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save Consultant</button>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Modal HTML for Editing Consultant -->
+                  <div class="modal fade" id="editConsultantModal" tabindex="-1" role="dialog" aria-labelledby="editConsultantModalLabel" aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                                 <h5 class="modal-title" id="editConsultantModalLabel">Edit Medical Consultant Account</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                 </button>
+                           </div>
+                           <div class="modal-body">
+                                 <!-- Form content for editing a medical consultant -->
+                                 <form>
+                                    <div class="form-group">
+                                       <label for="editConsultantName">Name</label>
+                                       <input type="text" class="form-control" id="editConsultantName" placeholder="Enter name">
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="editConsultantUsername">Username</label>
+                                       <input type="text" class="form-control" id="editConsultantUsername" placeholder="Enter username">
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="editConsultantPassword">Password</label>
+                                       <input type="password" class="form-control" id="editConsultantPassword" placeholder="Enter password">
+                                    </div>
+                                 </form>
+                           </div>
+                           <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save Changes</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-12 col-lg-12">
+                     <div class="card mb-4 shadow-1">
+                        <div class="card-header">
+                              <h4 class="card-header-title">
+                                 Medical Consultants
+                              </h4>
+                        </div>
+                        <div class="card-body collapse show" id="collapse3">
+                              <div class="mb-3">
+                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addConsultantModal">Add Consultant</button>
+                              </div>
+                              <table class="table table-hover">
+                                 <thead>
+                                    <tr>
+                                          <th>#</th>
+                                          <th>Name</th>
+                                          <th>Username</th>
+                                          <th>Actions</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                          <th scope="row">1</th>
+                                          <td>Dr. John Doe</td>
+                                          <td>johndoe</td>
+                                          <td>
+                                             <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#editConsultantModal" data-id="1" data-name="Dr. John Doe" data-username="johndoe">Edit</button>
+                                             <button type="button" class="btn btn-sm btn-danger" id="sweetalert-delete">Delete</button>
+                                          </td>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                 </tbody>
+                              </table>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- / End -->
+               <!--/ Main Wrapper End -->
+            </div>
+            
+            <!--/ Page Inner End -->
+            <!--================================-->
+            
+            <!-- Page Footer Start -->	
+            <!--================================-->
+            <footer class="page-footer bg-gray-100">
+               <div class="pd-y-10 pd-x-25">
+                  <span class="tx-italic text-muted">Guardian&copy; 213243</span>
+               </div>
+            </footer>
+            <!-- Page Footer End -->	
+         </div>
+         <!-- /Page Content -->
+      </div>
+      <!-- /Page Container -->
+      <!--================================-->
+      
+      <!-- Footer Script -->	
+      <!--================================-->
+      <script src="assets/plugins/jquery/jquery.min.js"></script>
+      <script src="assets/plugins/jquery-ui/jquery-ui.js"></script>
+      <script src="assets/plugins/popper/popper.js"></script>
+      <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/plugins/pace/pace.min.js"></script>
+      <script src="assets/js/jquery.slimscroll.min.js"></script>
+      <script src="assets/js/highlight.min.js"></script>
+      <script src="assets/js/adminify.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script src="assets/plugins/moment/moment.min.js"></script>
+      <script src="assets/plugins/datepicker/js/datepicker.min.js"></script>
+      <script src="assets/plugins/datepicker/js/datepicker.es.js"></script>
+      <script src="assets/plugins/pace/pace.min.js"></script>
+      <script src="assets/plugins/formatter/jquery.formatter.min.js"></script>
+      <script src="assets/plugins/modal/ui-modals.js"></script>
+      <script src="assets/plugins/sweetalert/bootstrap-sweetalert.js"></script>
+      <script src="assets/plugins/datatables/responsive/dataTables.responsive.js"></script>
+      <script src="assets/plugins/datatables/extensions/dataTables.jqueryui.min.js"></script>
+
+      <script>
+         // Phone Style 2
+         $('#phone-input-2').formatter({
+            'pattern': '+60 {{99}}-{{9999}}-{{9999}}',
+            'persistent': true
+         });
+
+         $('#sweetalert-delete').click(function(){
+            swal({
+               title: "Are you sure you want to delete?",
+               text: "You will not be able to recover this contact!",
+               type: "error",
+               showCancelButton: true,
+               confirmButtonClass: 'btn-danger',
+               confirmButtonText: 'Delete!'
+            });
+         });
+
+         $('#editConsultantModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            var id = button.data('id'); // Extract info from data-* attributes
+            var name = button.data('name');
+            var username = button.data('username');
+
+            // Update the modal's content.
+            var modal = $(this);
+            modal.find('#editConsultantName').val(name);
+            modal.find('#editConsultantUsername').val(username);
+            // You can also set the id to a hidden input if needed
+            // modal.find('#editConsultantId').val(id);
+         });
+      </script>
+   </body>
+</html>

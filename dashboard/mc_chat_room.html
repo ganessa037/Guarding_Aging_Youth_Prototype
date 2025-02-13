@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta charset="utf-8">
+	  <meta http-equiv="x-ua-compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="description" content="">
+	  <meta name="keyword" content="">
+	  <meta name="author"  content=""/>
+      <!-- Page Title -->
+      <title>Companion - Real Time Chat</title>
+      <!-- Main CSS -->			
+      <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+      <link href="assets/plugins/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+      <link href="assets/plugins/ionicons/css/ionicons.css" rel="stylesheet">
+      <link href="assets/plugins/jquery.scrollbar/jquery.scrollbar.css" rel="stylesheet">
+      <link href="assets/css/skin-turquoise.css" rel="stylesheet" id="style-colors">
+      <link href="assets/css/app.min.css" rel="stylesheet"/>
+      <link href="assets/css/style.css" rel="stylesheet"/>
+      <!-- Favicon -->	
+      <link rel="icon" href="assets/images/icon2.png" type="image/x-icon">
+      
+   </head>
+   <body>
+      <!--================================-->
+      <!-- Page Container Start -->
+      <!--================================-->
+      <div class="page-container">
+         <!--================================-->
+         <!-- Page Sidebar Start -->
+         <!--================================-->
+         <div class="page-sidebar">
+            <a class="logo-box" href="companion_dashboard.html">
+            <span><img src="assets/images/white_logo.png" alt=""></span>
+            <i class="ion-aperture" id="fixed-sidebar-toggle-button"></i>
+            <i class="ion-ios-close-empty" id="sidebar-toggle-button-close"></i>
+            </a>
+            <div class="page-sidebar-inner">
+               <div class="page-sidebar-menu">
+                  <ul class="accordion-menu">
+                     
+                     <li>
+                         <a href="mc_dashboard.html"><i class="fa fa-tachometer"></i>
+                         <span>Dashboard</span></a>
+                     </li>
+                     
+                     <li>
+                         <a href="mc_chat_room.html"><i class="fa fa-comments"></i>
+                         <span>Real Time Chat</span></a>
+                     </li>               
+                     
+                     <li>
+                         <a href="mc_profile_page.html"><i class="icon-user"></i>
+                         <span>My Profile</span></a>
+                     </li>
+                     
+                     <li>
+                         <a href="mc_faq.html"><i class="fa fa-question-circle"></i>
+                         <span>Help</span><span class="badge-info ft-right">FAQ</span></a>
+                     </li>
+                      
+                   </ul>
+               </div>
+               
+            </div>
+
+        
+            <!--================================-->
+            <!-- Sidebar Footer Start -->
+            <!--================================-->
+            <!-- <div class="sidebar-footer">									
+               <a class="pull-left" href="page-profile.html" data-toggle="tooltip" data-placement="top" data-original-title="Profile">
+               <i class="icon-user"></i></a>									
+
+               <a class="pull-left" href="page-singin.html" data-toggle="tooltip" data-placement="top" data-original-title="Log Out">
+               <i class="icon-power"></i></a>
+            </div> -->
+            <!--/ Sidebar Footer End -->
+         </div>
+         <!--/ Page Sidebar End -->
+         <!--================================-->
+         <!-- Page Content Start -->
+         <!--================================-->
+         <div class="page-content">
+            
+            <!--================================-->
+            <!-- Page Header Start -->
+            <!--================================-->
+            <div class="page-header">
+               <div class="search-form">
+                  <form action="#" method="GET">
+                     <div class="input-group">
+                        <input class="form-control search-input" name="search" placeholder="Type something..." type="text"/>
+                        <span class="input-group-btn">
+                        <span id="close-search"><i class="ion-ios-close-empty"></i></span>
+                        </span>
+                     </div>
+                  </form>
+               </div>
+               <nav class="navbar navbar-default">
+                  <!--================================-->
+                  <!-- Brand and Logo Start  -->
+                  <!--================================-->
+                  <div class="navbar-header">
+                     <div class="navbar-brand">
+                        <ul class="list-inline">
+                           <!-- Mobile Toggle and Logo -->
+                           <li class="list-inline-item"><a class="hidden-md hidden-lg" href="javascript:void(0)" id="sidebar-toggle-button"><i class="ion-navicon tx-20"></i></a></li>
+                           <!-- PC Toggle and Logo -->
+                           <li class="list-inline-item"><a class="text-muted hidden-xs hidden-sm" href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="ion-navicon tx-20"></i></a></li>
+                           <li class="list-inline-item mg-l-10"><a class="text-muted" href="javascript:void(0)" id="search-button"><i class="ion-ios-search-strong tx-20"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!--/ Brand and Logo End  -->
+                  <!--================================-->
+                  <!-- Header Right Start -->
+                  <!--================================-->
+                  <div class="header-right pull-right">
+                     <ul class="list-inline justify-content-end">
+                        
+                        <!-- Profile Dropdown Start -->
+                        <!--================================-->
+                        <li class="list-inline-item dropdown">
+                           <a class="text-muted" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="select-profile">Hi, Ganessa!</span>
+                           <img src="assets/images/avatar/avatar.png" class="mg-b-10 img-fluid wd-30" alt="">                           
+                           </a>
+                           <ul class="dropdown-menu profile-dropdown shadow-2">
+                              <li>
+                                 <a href="page-profile.html"><i class="icon-user"></i><span>My Profile</span></a>
+                              </li>                              
+                              <li>
+                                 <a href="page-singin.html"><i class="icon-logout"></i><span>Log Out</span></a>
+                              </li>
+                           </ul>
+                        </li>
+                        <!-- Profile Dropdown End -->
+                     </ul>
+                  </div>
+                  <!--/ Header Right End -->
+               </nav>
+            </div>
+            <!-- / Page Header End -->
+            <!--================================-->
+            <!-- Page Inner Start -->
+            <!--================================-->
+            <div class="page-inner">
+               <!--================================-->
+               <!-- Main Wrapper Start -->
+               <!--================================-->
+               <div id="main-wrapper">
+                  <div id="main-wrapper">
+                     <!--================================-->
+                     <!-- Breadcrumb Start -->
+                     <!--================================-->
+                     <div class="pageheader pd-y-15">
+                       <div class="pd-t-5 pd-b-5">
+                           <h1 class="pd-0 mg-0 tx-25 text-overflow">Your Role: <span style="color: red; font-weight: bold; font-style: italic;">Medical Consultant</span></h1>
+                       </div>
+                       <div class="breadcrumb pd-0 mg-0">
+                           <!-- <a class="breadcrumb-item" href="index.html"><i class="icon ion-ios-home-outline"></i> Home</a> -->
+                           <span class="breadcrumb-item active">Real Time Chat</span>
+                       </div>
+                     </div>
+                   </div>
+                  <!--================================-->
+                  <!-- Chatroom Start -->
+                  <!--================================-->
+                  <div class="card mg-t-25 mg-b-25">
+                     <div class="card-body pd-y-0">
+                         <div class="row">
+                             <div class="col-md-3 bg-white ">
+                                 <!-- member list -->
+                                 <div class="input-group input-group-sm mb-4">
+                                     <input type="text" class="form-control" placeholder="Type name here">
+                                     <div class="input-group-append">
+                                         <span class="btn btn-info">Search</span>
+                                     </div>
+                                 </div>
+                                 <ul class="friend-list scrollbar-outer">
+                                     <li class="active">
+                                         <a href="javascript:void(0)" class="clearfix">
+                                             <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
+                                             <span class="online-user"></span>
+                                             <div class="friend-name">	
+                                                 <strong>Guardian 1</strong>
+                                             </div>
+                                             <div class="last-message text-muted">Can you help with my child's symptoms?</div>
+                                             <small class="time text-muted">Just now</small>
+                                             <small class="chat-alert badge-danger">5+</small>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="javascript:void(0)" class="clearfix">
+                                             <img src="assets/images/user/user3.png" class="wd-36 rounded-circle" alt="Image">
+                                             <span class="online-user"></span>
+                                             <div class="friend-name">	
+                                                 <strong>Guardian 2</strong>
+                                             </div>
+                                             <div class="last-message text-muted">What should I do for a fever?</div>
+                                             <small class="time text-muted">5 mins ago</small>
+                                             <small class="chat-alert text-muted"><i class="fa fa-check"></i></small>
+                                         </a>
+                                     </li>
+                                 </ul>
+                             </div>
+                             <!-- selected chat -->
+                             <div class="col-md-9 bg-white bd">
+                                 <div class="flex-grow-0 py-3 pr-4 pl-lg-4">
+                                     <div class="media align-items-center">
+                                         <div class="position-relative user-message">
+                                             <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
+                                             <span class="online-user"></span>
+                                         </div>
+                                         <div class="media-body pl-3">
+                                             <strong>Guardian 1</strong>
+                                             <div class="text-muted small"><em>Typing...</em></div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="chat-message scrollbar-outer">
+                                     <ul class="chat">
+                                         <li class="left clearfix">
+                                             <span class="chat-img pull-left">
+                                                 <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
+                                             </span>
+                                             <div class="chat-body clearfix">
+                                                 <div class="header">
+                                                     <strong>Guardian 1</strong>
+                                                     <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                                                 </div>
+                                                 <p>
+                                                     Can you help with my child's symptoms? They have a high fever and a rash.
+                                                 </p>
+                                             </div>
+                                         </li>
+                                         <li class="right clearfix">
+                                             <span class="chat-img pull-right">
+                                                 <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
+                                             </span>
+                                             <div class="chat-body clearfix">
+                                                 <div class="header">
+                                                     <strong>Dr. Smith</strong>
+                                                     <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                                                 </div>
+                                                 <p>
+                                                     It sounds like your child might have an infection. Please monitor their temperature and ensure they stay hydrated. If the symptoms persist, visit a healthcare facility.
+                                                 </p>
+                                             </div>
+                                         </li>
+                                         <li class="left clearfix">
+                                             <span class="chat-img pull-left">
+                                                 <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
+                                             </span>
+                                             <div class="chat-body clearfix">
+                                                 <div class="header">
+                                                     <strong>Guardian 1</strong>
+                                                     <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                                                 </div>
+                                                 <p>
+                                                     Thank you, Doctor. I will do that.
+                                                 </p>
+                                             </div>
+                                         </li>
+                                     </ul>
+                                 </div>
+                                 <div class="chat-box p-2 mg-y-20 bd">
+                                     <div class="publisher publisher-multi">
+                                         <textarea class="publisher-input auto-expand" rows="2" placeholder="Write something..."></textarea>
+                                         <div class="flexbox">
+                                             <div class="gap-items"></div>
+                                             <button class="btn btn-sm btn-info">Send</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                  <!--/ Chatroom End -->
+               </div>
+               <!--/ Main Wrapper End -->
+            </div>
+            <!--/ Page Inner End -->
+            <!--================================-->
+
+            
+            <!-- Page Footer Start -->
+            <!--================================-->
+            <footer class="page-footer bg-gray-100">
+               <div class="pd-y-10 pd-x-25">
+                  <span class="tx-italic text-muted"></span>
+               </div>
+            </footer>
+            <!--/ Page Footer End -->	
+         </div>
+         <!--/ Page Content End  -->
+      </div>
+      <!--/ Page Container End -->
+      <!--================================-->
+	  <!--================================-->
+      <!-- Scroll To Top Start-->
+      <!--================================-->	
+      <a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+      <!--/ Scroll To Top End -->
+      <!--================================-->
+      <!-- Footer Script -->
+      <!--================================-->
+      <script src="assets/plugins/jquery/jquery.min.js"></script>
+      <script src="assets/plugins/jquery-ui/jquery-ui.js"></script>
+      <script src="assets/plugins/popper/popper.js"></script>
+      <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/plugins/pace/pace.min.js"></script>
+      <script src="assets/plugins/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+      <script src="assets/js/jquery.slimscroll.min.js"></script>
+      <script src="assets/js/highlight.min.js"></script>
+      <script src="assets/js/adminify.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta charset="utf-8">
+	  <meta http-equiv="x-ua-compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="description" content="">
+	  <meta name="keyword" content="">
+	  <meta name="author"  content=""/>
+      <!-- Page Title -->
+      <title>Blank</title>
+      <!-- Main CSS -->			
+      <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+      <link href="assets/plugins/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+      <link href="assets/plugins/ionicons/css/ionicons.css" rel="stylesheet">
+      <link href="assets/css/skin-turquoise.css" rel="stylesheet" id="style-colors">
+      <link href="assets/css/app.min.css" rel="stylesheet"/>
+      <link href="assets/css/style.css" rel="stylesheet"/>
+      <!-- Favicon -->	
+      <link rel="icon" href="assets/images/icon2.png" type="image/x-icon">
+   </head>
+   <body class="page-header-fixed">
+      <!--================================-->
+      <!-- Page Container Start -->
+      <!--================================-->
+      <div class="page-container">
+         <!--================================-->
+         <!-- Page Sidebar Start -->
+         <!--================================-->
+         <div class="page-sidebar">
+            <a class="logo-box" href="dash_guard.html">
+            <span><img src="assets/images/white_logo.png" alt=""></span>
+            <i class="ion-aperture" id="fixed-sidebar-toggle-button"></i>
+            <i class="ion-ios-close-empty" id="sidebar-toggle-button-close"></i>
+            </a>
+            <div class="page-sidebar-inner">
+               <div class="page-sidebar-menu">
+                  <ul class="accordion-menu">
+                     
+                    <li>
+                        <a href="guardian_dashboard.html"><i class="fa fa-tachometer"></i>
+                        <span>Dashboard</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="guardian_elderly_page.html"><i class="fa fa-user"></i>
+                        <span>Elderly Details</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="guardian_daily_report.html"><i class="fa fa-clipboard"></i>
+                        <span>Daily Reports</span></a>
+                    </li>      
+                    <li>
+                        <a href="guardian_chat_room.html"><i class="fa fa-comments"></i>
+                        <span>Real Time Chat</span></a>
+                    </li>               
+                    
+                    <li>
+                        <a href="guardian_profile_page.html"><i class="icon-user"></i>
+                        <span>My Profile</span></a>
+                    </li>
+                    <li>
+                        <a href="guardian_emergency_contacts.html"><i class="fa fa-phone"></i>
+                        <span>Emergency Contact</span><span class="badge-danger ft-right">SOS</span></a>
+                    </li>
+                    <li>
+                        <a href="guardian_faq.html"><i class="fa fa-question-circle"></i>
+                        <span>Help</span><span class="badge-info ft-right">FAQ</span></a>
+                    </li>
+                     
+                  </ul>
+               </div>
+               
+            </div>
+
+        
+            <!--================================-->
+            <!-- Sidebar Footer Start -->
+            <!--================================-->
+            <!-- <div class="sidebar-footer">									
+               <a class="pull-left" href="page-profile.html" data-toggle="tooltip" data-placement="top" data-original-title="Profile">
+               <i class="icon-user"></i></a>									
+
+               <a class="pull-left" href="page-singin.html" data-toggle="tooltip" data-placement="top" data-original-title="Log Out">
+               <i class="icon-power"></i></a>
+            </div> -->
+            <!--/ Sidebar Footer End -->
+         </div>
+         <!--/ Page Sidebar Start -->
+         <!--================================-->
+         <!-- Page Content Start -->
+         <!--================================-->
+         <div class="page-content">
+            <!--================================-->
+            <!-- Page Header Start -->
+            <!--================================-->
+            <div class="page-header">
+               <div class="search-form">
+                  <form action="#" method="GET">
+                     <div class="input-group">
+                        <input class="form-control search-input" name="search" placeholder="Type something..." type="text"/>
+                        <span class="input-group-btn">
+                        <span id="close-search"><i class="ion-ios-close-empty"></i></span>
+                        </span>
+                     </div>
+                  </form>
+               </div>
+               <nav class="navbar navbar-default">
+                  <!--================================-->
+                  <!-- Brand and Logo Start -->
+                  <!--================================-->
+                  <div class="navbar-header">
+                     <div class="navbar-brand">
+                        <ul class="list-inline">
+                           <!-- Mobile Toggle and Logo -->
+                           <li class="list-inline-item"><a class="hidden-md hidden-lg" href="javascript:void(0)" id="sidebar-toggle-button"><i class="ion-navicon tx-20"></i></a></li>
+                           <!-- PC Toggle and Logo -->
+                           <li class="list-inline-item"><a class="text-muted hidden-xs hidden-sm" href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="ion-navicon tx-20"></i></a></li>
+                           <li class="list-inline-item mg-l-10"><a class="text-muted" href="javascript:void(0)" id="search-button"><i class="ion-ios-search-strong tx-20"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!--/ Brand and Logo End -->
+
+
+                  <!--================================-->
+                  
+                  <!-- Header Right Start -->
+                  <!--================================-->
+                  <div class="header-right pull-right">
+                     <ul class="list-inline justify-content-end">
+                      
+                        <!-- Profile Dropdown Start -->
+                        <!--================================-->
+                        <li class="list-inline-item dropdown">
+                           <a class="text-muted" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="select-profile">Hi, Ganessa!</span>
+                           <img src="assets/images/avatar/avatar.png" class="mg-b-10 img-fluid wd-30" alt="">
+                           </a>
+                           <ul class="dropdown-menu profile-dropdown shadow-2">
+                              <li>
+                                 <a href="page-profile.html"><i class="icon-user"></i><span>My Profile</span></a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)"><i class="icon-pencil"></i><span>Sign Out</span></a>
+                              </li>
+                           </ul>
+                        </li>
+                        <!-- Profile Dropdown End -->
+                     </ul>
+                  </div>
+                  <!--/ Header Right End -->
+               </nav>
+            </div>
+            <!--/ Page Header End -->
+
+
+
+
+
+
+
+
+            
+            <!--================================-->
+            <!-- Page Inner Start -->
+            <!--================================-->
+            <div class="page-inner">
+               <!--================================-->
+               <!-- Main Wrapper Start -->
+               <!--================================-->
+               <div id="main-wrapper">
+                  <!--================================-->
+                  <!-- Breadcrumb Start -->
+                  <!--================================-->
+                  <div class="pageheader pd-y-15">
+                     <div class="pd-t-5 pd-b-5">
+                         <h1 class="pd-0 mg-0 tx-25 text-overflow">Your Role: <span style="color: red; font-weight: bold; font-style: italic;">Guardian</span></h1>
+                     </div>
+                     <div class="breadcrumb pd-0 mg-0">
+                         <!-- <a class="breadcrumb-item" href="index.html"><i class="icon ion-ios-home-outline"></i> Home</a> -->
+                         <span class="breadcrumb-item active">Dashboard</span>
+                     </div>
+                   </div>
+                  <!--/ Breadcrumb End -->
+
+
+                  <!-- <div class="row clearfix">
+
+                    <div class="col-md-6 col-lg-6">
+                        <div class="alert alert-success" role="alert">
+                            This is a success message to show positive action.
+                         </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="alert alert-success" role="alert">
+                            This is a success message to show positive action.
+                         </div>
+                    </div> -->
+
+                    
+
+                    
+
+                    
+
+                     <div class="col-12">
+
+                        
+                        <!--================================-->
+                        <!-- Dummy Text Start -->
+                        <!--================================-->
+                        <div class="row clearfix">
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="card mb-4 bg-warning text-light shadow-1">
+                                    <div class="card-body card-img">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <h4 class="mb-1">Status: <span class="font-weight-bold">Active</span></h4>
+                                            </div>
+                                            <div class="icon-container">
+                                                <i class="ion-information-circled fa-2x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- New Card for Companion Request Status -->
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="card mb-4 bg-primary text-light shadow-1">
+                                    <div class="card-body card-img">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <h4 class="mb-1">Companion: <span class="font-weight-bold">Ms.Emma</span></h4>
+                                            </div>
+                                            <div class="icon-container">
+                                                <i class="fa fa-users fa-3x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- Add this closing div tag -->
+                        
+                        
+                        <div class="row clerfix">
+                            <!--================================-->
+                     <!-- Profile Card 1 Start -->
+                     <!--================================-->	
+                     <div class="col-md-3 col-lg-3">
+                        <div class="card mb-4 shadow-1">
+                            <div class="card-body text-center text-muted">
+                                <img src="assets/images/avatar/avatar.png" class="mg-b-10 img-fluid wd-100" alt="">
+                                <p class="tx-20 text-bold mg-0">Mr. Abu</p>
+                                <p class="text-muted">Elderly</p>
+                                <p class="tx-12">Health Status: <span class="font-weight-bold">Stable</span></p>
+                                <p class="tx-12">Mobility Status: <span class="font-weight-bold">Uses Walking Aid</span></p>
+                                <p class="tx-12">Dietary Preferences: <span class="font-weight-bold">Vegetarian</span></p>
+                                
+                                <ul class="list-unstyled text-center bd-t mg-t-20 pd-t-20 row">
+                                    <li class="col-sm-6">
+                                        <span class="text-lg text-semibold text-main">Age</span>
+                                        <p class="text-muted mar-no">78</p>
+                                    </li>
+                                    <li class="col-sm-6">
+                                        <span class="text-lg text-semibold text-main">Gender</span>
+                                        <p class="text-muted mar-no">Male</p>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!--/ Profile Card 1 End -->
+                     <!--================================-->
+                     <!-- Profile Card 2 Start -->
+                     <!--================================-->	
+                     <div class="col-md-3 col-lg-3">
+                        <div class="card  mb-4 shadow-1 bg-danger">
+                           <div class="card-body text-center text-white">
+                              <img src="assets/images/avatar/avatar.png" class="mg-b-10 img-fluid wd-100" alt="">
+                              <p class="tx-20 text-bold mg-0">Ms.Emma</p>
+                              <p class="text-white">Companion</p>
+                              <p class="tx-12">Contact No: <span class="font-weight-bold">+60111665977</span></p>
+                              <p class="tx-12">Specialization: <span class="font-weight-bold">Nursing</span></p>
+                              <p class="tx-12">Experi: <span class="font-weight-bold">Nursing</span></p>
+                              
+                              <ul class="list-unstyled text-center bd-t mg-t-20 pd-t-20 row">
+                                 <li class="col-sm-4">
+                                    <span class="text-lg text-semibold text-main">Age</span>
+                                    <p class="text-white mar-no">55</p>
+                                 </li>
+                                 <li class="col-sm-4">
+                                    <span class="text-lg text-semibold text-main">Experience</span>
+                                    <p class="text-white mar-no">7 years</p>
+                                 </li>
+                                 <li class="col-sm-4">
+                                    <span class="text-lg text-semibold text-main">Gender</span>
+                                    <p class="text-white mar-no">Female</p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!--/ Profile Card 2 End -->
+                     <!--================================-->
+                        </div>
+                         
+                        <div class="card mb-4 shadow-1">
+                           <div class="card-header">
+                              <h4 class="card-header-title">
+                                 About Guarding Aging Youth
+                              </h4>
+                              
+                           </div>
+                           <div class="collapse show" id="collapse1">
+                            <p class="pd-x-20 pd-y-10">Welcome to our website dedicated to supporting the elderly and their companions. Our platform provides a comprehensive dashboard to manage Elderly Detailss, daily reports, real-time chat, and emergency contacts.</p>
+                            <p class="pd-x-20 pd-y-10">Our mission is to ensure the well-being of the elderly by offering a user-friendly interface for caregivers and family members to monitor and assist their loved ones. We strive to create a safe and supportive environment for everyone involved.</p>
+                         </div>
+                        </div>
+                        
+                        
+                        <!--/ Dummy Text End -->
+                     </div>
+                  </div>
+               
+               <!--/ Main Wrapper End -->
+            </div>
+            <!--/ Page Inner End -->
+            <!--================================-->	
+            
+         </div>
+         
+         <!-- /Page Content -->
+      </div>
+      <!-- /Page Container -->
+      <!--================================-->
+
+
+      <!-- Scroll To Top Start-->
+      <!--================================-->	
+      <a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+      <!--/ Scroll To Top End -->
+
+
+
+
+
+
+      <!--================================-->
+      <!-- Footer Script -->	
+      <!--================================-->
+      <script src="assets/plugins/jquery/jquery.min.js"></script>
+      <script src="assets/plugins/jquery-ui/jquery-ui.js"></script>
+      <script src="assets/plugins/popper/popper.js"></script>
+      <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/plugins/pace/pace.min.js"></script>
+      <script src="assets/js/jquery.slimscroll.min.js"></script>
+      <script src="assets/js/highlight.min.js"></script>
+      <script src="assets/js/adminify.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>
