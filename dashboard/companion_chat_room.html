@@ -3,11 +3,11 @@
    <head>
       <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
       <meta charset="utf-8">
-	  <meta http-equiv="x-ua-compatible" content="IE=edge">
+      <meta http-equiv="x-ua-compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <meta name="description" content="">
-	  <meta name="keyword" content="">
-	  <meta name="author"  content=""/>
+      <meta name="description" content="">
+      <meta name="keyword" content="">
+      <meta name="author" content=""/>
       <!-- Page Title -->
       <title>Companion - Real Time Chat</title>
       <!-- Main CSS -->			
@@ -21,7 +21,6 @@
       <link href="assets/css/style.css" rel="stylesheet"/>
       <!-- Favicon -->	
       <link rel="icon" href="assets/images/icon2.png" type="image/x-icon">
-      
    </head>
    <body>
       <!--================================-->
@@ -40,61 +39,39 @@
             <div class="page-sidebar-inner">
                <div class="page-sidebar-menu">
                   <ul class="accordion-menu">
-                     
-                    <li>
+                     <li>
                         <a href="companion_dashboard.html"><i class="fa fa-tachometer"></i>
                         <span>Dashboard</span></a>
-                    </li>
-                    
-                    
-                    <li>
+                     </li>
+                     <li>
                         <a href="companion_daily reports.html"><i class="fa fa-clipboard"></i>
                         <span>Daily Reports</span></a>
-                    </li>      
-
-                    <li>
-                     <a href="companion_form_page.html"><i class="fa fa-clipboard"></i>
-                     <span>Personal Documents</span></a>
-                 </li> 
-                    <li>
+                     </li>      
+                     <li>
+                        <a href="companion_form_page.html"><i class="fa fa-clipboard"></i>
+                        <span>Personal Documents</span></a>
+                     </li> 
+                     <li>
                         <a href="companion_chat_room.html"><i class="fa fa-comments"></i>
                         <span>Real Time Chat</span></a>
-                    </li>               
-                    
-                    <li>
+                     </li>               
+                     <li>
                         <a href="companion_profile_page.html"><i class="icon-user"></i>
                         <span>My Profile</span></a>
-                    </li>
-                    
-                    <li>
+                     </li>
+                     <li>
                         <a href="companion_faq.html"><i class="fa fa-question-circle"></i>
                         <span>Help</span><span class="badge-info ft-right">FAQ</span></a>
-                    </li>
-                     
+                     </li>
                   </ul>
                </div>
-               
             </div>
-
-        
-            <!--================================-->
-            <!-- Sidebar Footer Start -->
-            <!--================================-->
-            <!-- <div class="sidebar-footer">									
-               <a class="pull-left" href="page-profile.html" data-toggle="tooltip" data-placement="top" data-original-title="Profile">
-               <i class="icon-user"></i></a>									
-
-               <a class="pull-left" href="page-singin.html" data-toggle="tooltip" data-placement="top" data-original-title="Log Out">
-               <i class="icon-power"></i></a>
-            </div> -->
-            <!--/ Sidebar Footer End -->
          </div>
          <!--/ Page Sidebar End -->
          <!--================================-->
          <!-- Page Content Start -->
          <!--================================-->
          <div class="page-content">
-            
             <!--================================-->
             <!-- Page Header Start -->
             <!--================================-->
@@ -130,7 +107,6 @@
                   <!--================================-->
                   <div class="header-right pull-right">
                      <ul class="list-inline justify-content-end">
-                        
                         <!-- Profile Dropdown Start -->
                         <!--================================-->
                         <li class="list-inline-item dropdown">
@@ -181,255 +157,136 @@
                   <!--================================-->
                   <div class="card mg-t-25 mg-b-25">
                      <div class="card-body pd-y-0">
-                        <div class="row">
-                           <div class="col-md-3 bg-white ">
-                              <!-- member list -->
-                              <div class="input-group input-group-sm mb-4">
-                                 <input type="text" class="form-control" placeholder="Type name here">
-                                 <div class="input-group-append">
-                                    <span class="btn btn-info">Search</span>
+                         <div class="row">
+                             <div class="col-md-3 bg-white ">
+                                 <!-- member list -->
+                                 <div class="input-group input-group-sm mb-4">
+                                     <input type="text" class="form-control" placeholder="Type name here">
+                                     <div class="input-group-append">
+                                         <span class="btn btn-info">Search</span>
+                                     </div>
                                  </div>
-                              </div>
-                              <ul class="friend-list scrollbar-outer">
-                                 <li class="active">
-                                    <a href="javascript:void(0)" class="clearfix">
-                                       <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
-                                       <span class="online-user"></span>
-                                       <div class="friend-name">	
-                                          <strong>John Doe</strong>
-                                       </div>
-                                       <div class="last-message text-muted">Hello, Are you there?</div>
-                                       <small class="time text-muted">Just now</small>
-                                       <small class="chat-alert badge-danger">5+</small>
-                                    </a>
-                                 </li>
-                                 
-                                 <li>
-                                    <a href="javascript:void(0)" class="clearfix">
-                                       <img src="assets/images/user/user3.png" class="wd-36 rounded-circle" alt="Image">
-                                       <span class="online-user"></span>
-                                       <div class="friend-name">	
-                                          <strong>Nellie Maxwell</strong>
-                                       </div>
-                                       <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
-                                       <small class="time text-muted">5 mins ago</small>
-                                       <small class="chat-alert text-muted"><i class="fa fa-check"></i></small>
-                                    </a>
-                                 </li>
-                                 
-                              </ul>
-                           </div>
-                           <!-- selected chat -->
-                           <div class="col-md-9 bg-white bd">
-                              <div class="flex-grow-0 py-3 pr-4 pl-lg-4">
-                                 <div class="media align-items-center">
-                                    <div class="position-relative user-message">
-                                       <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
-                                       <span class="online-user"></span>
-                                    </div>
-                                    <div class="media-body pl-3">
-                                       <strong>John Doe</strong>
-                                       <div class="text-muted small"><em>Typing...</em></div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="chat-message scrollbar-outer">
-                                 <ul class="chat">
-                                    <li class="left clearfix">
-                                       <span class="chat-img pull-left">
-                                       <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>John Doe</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="right clearfix">
-                                       <span class="chat-img pull-right">
-                                       <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>Hannah Deo</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="left clearfix">
-                                       <span class="chat-img pull-left">
-                                       <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>John Doe</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="right clearfix">
-                                       <span class="chat-img pull-right">
-                                       <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>Hannah Deo</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="left clearfix">
-                                       <span class="chat-img pull-left">
-                                       <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>John Doe</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="right clearfix">
-                                       <span class="chat-img pull-right">
-                                       <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>Hannah Deo</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="left clearfix">
-                                       <span class="chat-img pull-left">
-                                       <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>John Doe</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="right clearfix">
-                                       <span class="chat-img pull-right">
-                                       <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>Hannah Deo</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="left clearfix">
-                                       <span class="chat-img pull-left">
-                                       <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>John Doe</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="right clearfix">
-                                       <span class="chat-img pull-right">
-                                       <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>Hannah Deo</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="left clearfix">
-                                       <span class="chat-img pull-left">
-                                       <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>John Doe</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          </p>
-                                       </div>
-                                    </li>
-                                    <li class="right clearfix">
-                                       <span class="chat-img pull-right">
-                                       <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
-                                       </span>
-                                       <div class="chat-body clearfix">
-                                          <div class="header">
-                                             <strong>Hannah Deo</strong>
-                                             <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
-                                          </div>
-                                          <p>
-                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
-                                          </p>
-                                       </div>
-                                    </li>
+                                 <ul class="friend-list scrollbar-outer">
+                                     <li class="active">
+                                         <a href="javascript:void(0)" class="clearfix">
+                                             <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
+                                             <span class="online-user"></span>
+                                             <div class="friend-name">    
+                                                 <strong>Dr. Smith</strong>
+                                             </div>
+                                             <div class="last-message text-muted">Hello, Are you there?</div>
+                                             <small class="time text-muted">Just now</small>
+                                             <small class="chat-alert badge-danger">5+</small>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="javascript:void(0)" class="clearfix">
+                                             <img src="assets/images/user/user3.png" class="wd-36 rounded-circle" alt="Image">
+                                             <span class="online-user"></span>
+                                             <div class="friend-name">    
+                                                 <strong>Guardian Jane</strong>
+                                             </div>
+                                             <div class="last-message text-muted">Are you fine now?.</div>
+                                             <small class="time text-muted">5 mins ago</small>
+                                             <small class="chat-alert text-muted"><i class="fa fa-check"></i></small>
+                                         </a>
+                                     </li>
                                  </ul>
-                              </div>
-                              <div class="chat-box p-2 mg-y-20 bd">
-								  <div class="publisher publisher-multi">
-									 <textarea class="publisher-input auto-expand" rows="2" placeholder="Write something..."></textarea>
-									 <div class="flexbox">
-										<div class="gap-items">
-										   
-										   </span>
-										   
-										</div>
-										<button class="btn btn-sm btn-info">Send</button>
-									 </div>
-								  </div>
-                              </div>
-                           </div>
-                        </div>
+                             </div>
+                             <!-- selected chat -->
+                             <div class="col-md-9 bg-white bd">
+                                 <div class="flex-grow-0 py-3 pr-4 pl-lg-4">
+                                     <div class="media align-items-center">
+                                         <div class="position-relative user-message">
+                                             <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
+                                             <span class="online-user"></span>
+                                         </div>
+                                         <div class="media-body pl-3">
+                                             <strong>Dr. Smith</strong>
+                                             <div class="text-muted small"><em>Typing...</em></div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="chat-message scrollbar-outer">
+                                     <ul class="chat">
+                                         <li class="left clearfix">
+                                             <span class="chat-img pull-left">
+                                             <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
+                                             </span>
+                                             <div class="chat-body clearfix">
+                                                 <div class="header">
+                                                     <strong>Dr. Smith</strong>
+                                                     <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                                                 </div>
+                                                 <p>
+                                                     Hello, how is the patient doing today?
+                                                 </p>
+                                             </div>
+                                         </li>
+                                         <li class="right clearfix">
+                                             <span class="chat-img pull-right">
+                                             <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
+                                             </span>
+                                             <div class="chat-body clearfix">
+                                                 <div class="header">
+                                                     <strong>Ganessa</strong>
+                                                     <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 11 mins ago</small>
+                                                 </div>
+                                                 <p>
+                                                     The patient is doing well, but they had a slight fever last night.
+                                                 </p>
+                                             </div>
+                                         </li>
+                                         <li class="left clearfix">
+                                             <span class="chat-img pull-left">
+                                             <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
+                                             </span>
+                                             <div class="chat-body clearfix">
+                                                 <div class="header">
+                                                     <strong>Dr. Smith</strong>
+                                                     <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 10 mins ago</small>
+                                                 </div>
+                                                 <p>
+                                                     Make sure they stay hydrated and monitor their temperature. If it persists, let me know.
+                                                 </p>
+                                             </div>
+                                         </li>
+                                         <li class="right clearfix">
+                                             <span class="chat-img pull-right">
+                                             <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
+                                             </span>
+                                             <div class="chat-body clearfix">
+                                                 <div class="header">
+                                                     <strong>Ganessa</strong>
+                                                     <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 9 mins ago</small>
+                                                 </div>
+                                                 <p>
+                                                     Will do, thank you, Dr. Smith.
+                                                 </p>
+                                             </div>
+                                         </li>
+                                     </ul>
+                                 </div>
+                                 <div class="chat-box p-2 mg-y-20 bd">
+                                     <div class="publisher publisher-multi">
+                                         <textarea class="publisher-input auto-expand" rows="2" placeholder="Write something..."></textarea>
+                                         <div class="flexbox">
+                                             <div class="gap-items">
+                                             </div>
+                                             <button class="btn btn-sm btn-info">Send</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
                      </div>
-                  </div>
+                 </div>
                   <!--/ Chatroom End -->
                </div>
                <!--/ Main Wrapper End -->
             </div>
             <!--/ Page Inner End -->
             <!--================================-->
-
-            
             <!-- Page Footer Start -->
             <!--================================-->
             <footer class="page-footer bg-gray-100">
@@ -443,7 +300,6 @@
       </div>
       <!--/ Page Container End -->
       <!--================================-->
-	  <!--================================-->
       <!-- Scroll To Top Start-->
       <!--================================-->	
       <a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>

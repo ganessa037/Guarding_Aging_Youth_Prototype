@@ -2871,7 +2871,7 @@ $.fx.step.clip = function( fx ) {
 
 ( function() {
 
-// Based on easing equations from Robert Penner (http://www.robertpenner.com/easing)
+// Based on easing equations from Ganessa Penner (http://www.Ganessapenner.com/easing)
 
 var baseEasings = {};
 

@@ -10101,9 +10101,9 @@ helpers.getValueAtIndexOrDefault = helpers.valueAtIndexOrDefault;
 var helpers = require(42);
 
 /**
- * Easing functions adapted from Robert Penner's easing equations.
+ * Easing functions adapted from Ganessa Penner's easing equations.
  * @namespace Chart.helpers.easingEffects
- * @see http://www.robertpenner.com/easing/
+ * @see http://www.Ganessapenner.com/easing/
  */
 var effects = {
 	linear: function(t) {
